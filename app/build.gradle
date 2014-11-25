@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.joshskeen.andengine"
-        minSdkVersion 13
+        minSdkVersion 15
         targetSdkVersion 21
         versionCode 1
         versionName "1.0"
@@ -15,6 +15,11 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            assets.srcDirs = ['assets']
         }
     }
 }
