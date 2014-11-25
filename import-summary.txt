@@ -8,29 +8,10 @@ should evaluate whether these are still needed in your project and if
 so manually move them:
 
 * .gitignore
-* AUTHORS.md
-* LICENSE.md
 * README.md
+* UPDATE_LIBGDX_SOURCES.bat
+* UPDATE_LIBGDX_SOURCES.sh
 * build.xml
-* ext/
-* ext/img/
-* ext/img/android.svg
-* ext/img/badge.png
-* ext/img/badge.svg
-* ext/img/clapboard.png
-* ext/img/clapboard.svg
-* ext/img/favicon.png
-* ext/img/favicon.svg
-* ext/img/icon.svg
-* ext/img/logo.png
-* ext/img/logo.svg
-* ext/img/logo_icon.svg
-* ext/img/source.png
-* ext/img/source.svg
-* ext/img/splash.png
-* ext/img/splash.svg
-* ext/scripts/
-* ext/scripts/build_texturepacks.sh
 * proguard.cfg
 
 Moved Files:
@@ -38,13 +19,10 @@ Moved Files:
 Android Gradle projects use a different directory structure than ADT
 Eclipse projects. Here's how the projects were restructured:
 
-* AndroidManifest.xml => andEngine/src/main/AndroidManifest.xml
-* jni/ => andEngine/src/main/jni/
-* libs/armeabi-v7a/libandengine.so => andEngine/src/main/jniLibs/armeabi-v7a/libandengine.so
-* libs/armeabi/libandengine.so => andEngine/src/main/jniLibs/armeabi/libandengine.so
-* libs/x86/libandengine.so => andEngine/src/main/jniLibs/x86/libandengine.so
-* res/ => andEngine/src/main/res/
-* src/ => andEngine/src/main/java/
+* AndroidManifest.xml => andEnginePhysicsBox2DExtension/src/main/AndroidManifest.xml
+* jni/ => andEnginePhysicsBox2DExtension/src/main/jni/
+* res/ => andEnginePhysicsBox2DExtension/src/main/res/
+* src/ => andEnginePhysicsBox2DExtension/src/main/java/
 
 Next Steps:
 -----------

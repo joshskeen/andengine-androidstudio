@@ -5,8 +5,8 @@ android {
 
     defaultConfig {
         applicationId "org.andengine"
-        minSdkVersion 8
-        targetSdkVersion 8
+        minSdkVersion 15
+        targetSdkVersion 21
 
         ndk {
             moduleName "andengine_shared"
