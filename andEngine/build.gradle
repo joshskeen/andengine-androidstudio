@@ -1,0 +1,30 @@
+apply plugin: 'com.android.library'
+android {
+    compileSdkVersion 21
+    buildToolsVersion '21.1.0'
+
+    defaultConfig {
+        applicationId "org.andengine"
+        minSdkVersion 8
+        targetSdkVersion 8
+
+        ndk {
+            moduleName "andengine_shared"
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+    sourceSets {
+        main {
+            jni.srcDirs = [] // This needs to be done so that gradle does not know about your jni. There are errors otherwise
+        }
+    }
+
+    buildTypes {
+        release {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
