@@ -178,7 +178,7 @@ public class ParticleSystem<T extends IEntity> extends Entity {
 
 		this.mParticlesDueToSpawn += newParticlesThisFrame;
 
-		final int particlesToSpawnThisFrame = Math.min(this.mParticlesMaximum - this.mParticlesAlive, (int)FloatMath.floor(this.mParticlesDueToSpawn));
+		final int particlesToSpawnThisFrame = Math.min(this.mParticlesMaximum - this.mParticlesAlive, (int)Math.floor(this.mParticlesDueToSpawn));
 		this.mParticlesDueToSpawn -= particlesToSpawnThisFrame;
 
 		for(int i = 0; i < particlesToSpawnThisFrame; i++){
